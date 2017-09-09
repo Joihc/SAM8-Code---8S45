@@ -1,0 +1,1940 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V5.2.1.11                                          #
+#                                                                              #
+#           Link time     =  08/Aug/2016  09:22:13                             #
+#           Target CPU    =  SAM8                                              #
+#           List file     =  F:\GitHub\SAM8-Code\Debug\List\MyCode.map         #
+#           Output file 1 =  F:\GitHub\SAM8-Code\Debug\Exe\MyCode.hex          #
+#                            Format: debug                                     #
+#                            UBROF version 9.1.2                               #
+#                            Using library modules for C-SPY (-rt)             #
+#           Command line  =  F:\GitHub\SAM8-Code\Debug\Obj\74HC164.r18         #
+#                            F:\GitHub\SAM8-Code\Debug\Obj\AT24C01.r18         #
+#                            F:\GitHub\SAM8-Code\Debug\Obj\IIC.r18             #
+#                            F:\GitHub\SAM8-Code\Debug\Obj\PWM.r18             #
+#                            F:\GitHub\SAM8-Code\Debug\Obj\TM1629.r18          #
+#                            F:\GitHub\SAM8-Code\Debug\Obj\adc.r18             #
+#                            F:\GitHub\SAM8-Code\Debug\Obj\main.r18            #
+#                            F:\GitHub\SAM8-Code\Debug\Obj\time.r18 -o         #
+#                            F:\GitHub\SAM8-Code\Debug\Exe\MyCode.hex -l       #
+#                            F:\GitHub\SAM8-Code\Debug\List\MyCode.map -xmso   #
+#                            -ID:\pf\IAR\SAM8\LIB\ -f                          #
+#                            D:\pf\IAR\SAM8\config\lnksam8.xcl (-csam8         #
+#                            -e_small_write=_formatted_write                   #
+#                            -e_medium_read=_formatted_read                    #
+#                            -Z(CODE)INTVEC,CALLT_C=00-FF                      #
+#                            -Z(CODE)RESET=100-FFFF                            #
+#                            -Z(CODE)CODE,TINY_ID,TINY2_ID,TINYP_ID,TINY2P_ID, #
+#                            TINYP_ID_END,TINYP_Z_ID,TINY2P_Z_ID,TINYP_Z_ID_EN #
+#                            D,NEAR_ID,CONST_C=100-FFFF                        #
+#                            -Z(IDATA)TINY_I,TINY_N,TINY_Z,CSTACK+_CSTACK_SIZE #
+#                            =00-BF                                            #
+#                            -Z(IDATA)TINY2_I,TINY2_N,TINY2_Z,CSTACK2+_CSTACK2 #
+#                            _SIZE#00-FF                                       #
+#                            -Z(IDATA)TINYP1_N,TINYP1_Z,TINYP1_I=100-1BF       #
+#                            -Z(IDATA)TINY2P1_N,TINY2P1_Z,TINY2P1_I#100-1FF    #
+#                            -Z(IDATA)TINYP2_N,TINYP2_Z,TINYP2_I=200-2BF       #
+#                            -Z(IDATA)TINY2P2_N,TINY2P2_Z,TINY2P2_I#200-2FF    #
+#                            -Z(IDATA)TINYP3_N,TINYP3_Z,TINYP3_I=300-3BF       #
+#                            -Z(IDATA)TINY2P3_N,TINY2P3_Z,TINY2P3_I#300-3FF    #
+#                            -Z(IDATA)TINYP4_N,TINYP4_Z,TINYP4_I=400-4BF       #
+#                            -Z(IDATA)TINY2P4_N,TINY2P4_Z,TINY2P4_I#400-4FF    #
+#                            -Z(IDATA)TINYP5_N,TINYP5_Z,TINYP5_I=500-5BF       #
+#                            -Z(IDATA)TINY2P5_N,TINY2P5_Z,TINY2P5_I#500-5FF    #
+#                            -Z(IDATA)TINYP6_N,TINYP6_Z,TINYP6_I=600-6BF       #
+#                            -Z(IDATA)TINY2P6_N,TINY2P6_Z,TINY2P6_I#600-6FF    #
+#                            -Z(IDATA)TINYP7_N,TINYP7_Z,TINYP7_I=700-7BF       #
+#                            -Z(IDATA)TINY2P7_N,TINY2P7_Z,TINY2P7_I#700-7FF    #
+#                            -Z(IDATA)TINYP8_N,TINYP8_Z,TINYP8_I=800-8BF       #
+#                            -Z(IDATA)TINY2P8_N,TINY2P8_Z,TINY2P8_I#800-8FF    #
+#                            -Z(IDATA)TINYP9_N,TINYP9_Z,TINYP9_I=900-9BF       #
+#                            -Z(IDATA)TINY2P9_N,TINY2P9_Z,TINY2P9_I#900-9FF    #
+#                            -Z(IDATA)TINYP10_N,TINYP10_Z,TINYP10_I=A00-ABF    #
+#                            -Z(IDATA)TINY2P10_N,TINY2P10_Z,TINY2P10_I#A00-AFF #
+#                            -Z(IDATA)TINYP11_N,TINYP11_Z,TINYP11_I=B00-BBF    #
+#                            -Z(IDATA)TINY2P11_N,TINY2P11_Z,TINY2P11_I#B00-BFF #
+#                            -Z(IDATA)TINYP12_N,TINYP12_Z,TINYP12_I=C00-CBF    #
+#                            -Z(IDATA)TINY2P12_N,TINY2P12_Z,TINY2P12_I#C00-CFF #
+#                            -Z(IDATA)TINYP13_N,TINYP13_Z,TINYP13_I=D00-DBF    #
+#                            -Z(IDATA)TINY2P13_N,TINY2P13_Z,TINY2P13_I#D00-DFF #
+#                            -Z(IDATA)TINYP14_N,TINYP14_Z,TINYP14_I=E00-EBF    #
+#                            -Z(IDATA)TINY2P14_N,TINY2P14_Z,TINY2P14_I#E00-EFF #
+#                            -Z(IDATA)TINYP15_N,TINYP15_Z,TINYP15_I=F00-FBF    #
+#                            -Z(IDATA)TINY2P15_N,TINY2P15_Z,TINY2P15_I#F00-FFF #
+#                            -P(IDATA)TINYP_N,TINYP_I,TINYP_Z=000-0BF,100-1BF, #
+#                            200-2BF,300-3BF,400-4BF,500-5BF,600-6BF,700-7BF,8 #
+#                            00-8BF,900-9BF,A00-ABF,B00-BBF,C00-CBF,D00-DBF,E0 #
+#                            0-EBF,F00-FBF                                     #
+#                            -P(IDATA)TINY2P_N,TINY2P_I,TINY2P_Z=00-0FF,100-1F #
+#                            F,200-2FF,300-3FF,400-4FF,500-5FF,600-6FF,700-7FF #
+#                            ,800-8FF,900-9FF,A00-AFF,B00-BFF,C00-CFF,D00-DFF, #
+#                            E00-EFF,F00-FFF                                   #
+#                            -Z(XDATA)NEAR_I,NEAR_Z,NEAR_N,CSTACKN+_CSTACKN_SI #
+#                            ZE=0000-FFFF)                                     #
+#                            -D_CSTACKN_SIZE=0 -D_CSTACK2_SIZE=0               #
+#                            -D_CSTACK_SIZE=50 -rt -s __program_start          #
+#                            D:\pf\IAR\SAM8\lib\clsam8xriss.r18                #
+#                                                                              #
+#                           Copyright (C) 1987-2011 IAR Systems AB.            #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at : CODE      0100  Relocatable, from module : ?CSTARTUP
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  __code_model = small
+  __core       = sam8xri
+  __data_model = small
+  __rt_version = 2
+
+                ****************************************
+                *                                      *
+                *    AUTOMATIC SYMBOL REDIRECTIONS     *
+                *                                      *
+                ****************************************
+
+                  There are no automatic symbol redirections.
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?ABS_ENTRY_MOD
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _CSTACK_SIZE            0050 
+           _CSTACK2_SIZE           0000 
+           _CSTACKN_SIZE           0000 
+    *************************************************************************
+
+  FILE NAME : F:\GitHub\SAM8-Code\Debug\Obj\74HC164.r18
+  PROGRAM MODULE, NAME : 74HC164
+
+  SEGMENTS IN THE MODULE
+  ======================
+BANK0_A
+  Relative segment, address: DATA 00E1 - 00E1 (0x1 bytes), align: 0
+  Segment part 1. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P1                      00E1 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00E2 - 00E2 (0x1 bytes), align: 0
+  Segment part 2. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2                      00E2 
+
+    *************************************************************************
+
+  FILE NAME : F:\GitHub\SAM8-Code\Debug\Obj\AT24C01.r18
+    *************************************************************************
+
+  FILE NAME : F:\GitHub\SAM8-Code\Debug\Obj\IIC.r18
+  PROGRAM MODULE, NAME : IIC
+
+  SEGMENTS IN THE MODULE
+  ======================
+BANK0_A
+  Relative segment, address: DATA 00EB - 00EB (0x1 bytes), align: 0
+  Segment part 2. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2CONL                  00EB 
+
+    *************************************************************************
+
+  FILE NAME : F:\GitHub\SAM8-Code\Debug\Obj\PWM.r18
+  PROGRAM MODULE, NAME : PWM
+
+  SEGMENTS IN THE MODULE
+  ======================
+BANK0_A
+  Relative segment, address: DATA 00E9 - 00E9 (0x1 bytes), align: 0
+  Segment part 2. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P1CONL                  00E9 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00F6 - 00F6 (0x1 bytes), align: 0
+  Segment part 3. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TBDATAH                 00F6 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00F7 - 00F7 (0x1 bytes), align: 0
+  Segment part 4. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TBDATAL                 00F7 
+    -------------------------------------------------------------------------
+TINY_I
+  Relative segment, address: IDATA 0000 - 0000 (0x1 bytes), align: 0
+  Segment part 9.             Intra module refs:   Segment part 12
+                                                   fixPWM
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           pwm                     0000 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0128 - 0203 (0xdc bytes), align: 0
+  Segment part 11.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           fixPWM                  0128            main (main)
+               calls direct
+               CSTACK = 00000000 ( 00000006 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0204 - 0210 (0xd bytes), align: 0
+  Segment part 12.            Intra module refs:   fixPWM
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0211 - 029F (0x8f bytes), align: 0
+  Segment part 16.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           getPWMRate              0211            ViewSet (main)
+               calls direct
+    -------------------------------------------------------------------------
+TINY_ID
+  Relative segment, address: CODE 1DE5 - 1DE5 (0x1 bytes), align: 0
+  Segment part 8.             Intra module refs:   pwm
+
+    *************************************************************************
+
+  FILE NAME : F:\GitHub\SAM8-Code\Debug\Obj\TM1629.r18
+  PROGRAM MODULE, NAME : TM1629
+
+  SEGMENTS IN THE MODULE
+  ======================
+CONST_C
+  Relative segment, address: CODE 1E00 - 1E0E (0xf bytes), align: 0
+  Segment part 6.             Intra module refs:   Segment part 46
+                                                   set_TM1629_Down
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RightCode               1E00 
+    -------------------------------------------------------------------------
+CONST_C
+  Relative segment, address: CODE 1E0F - 1E1B (0xd bytes), align: 0
+  Segment part 7.             Intra module refs:   Segment part 47
+                                                   set_TM1629_Down
+                                                   set_TM1629_Up
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LeftCode                1E0F 
+    -------------------------------------------------------------------------
+TINY_I
+  Relative segment, address: IDATA 0001 - 0010 (0x10 bytes), align: 0
+  Segment part 9.             Intra module refs:   Segment part 37
+                                                   Segment part 38
+                                                   Segment part 43
+                                                   Segment part 51
+                                                   set_TM1629_Down
+                                                   set_TM1629_LeftNum
+                                                   set_TM1629_Leftstring
+                                                   set_TM1629_Up
+                                                   set_TM1629_Waterg
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           buffCode_TM1629         0001 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 001B - 001B (0x1 bytes), align: 0
+  Segment part 10.            Intra module refs:   interuptUpdate_TM1629
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           startTimeSecond         001B 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 001C - 001C (0x1 bytes), align: 0
+  Segment part 11.            Intra module refs:   interuptUpdate_TM1629
+                                                   set_TM1629_Down
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           startTimeMin            001C 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 001D - 001D (0x1 bytes), align: 0
+  Segment part 12.            Intra module refs:   interuptUpdate_TM1629
+                                                   set_TM1629_Down
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           startTimeHour           001D 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 001E - 001E (0x1 bytes), align: 0
+  Segment part 13.            Intra module refs:   Segment part 39
+                                                   set_TM1629_Waterg
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           stateTime               001E 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 001F - 001F (0x1 bytes), align: 0
+  Segment part 14.            Intra module refs:   Segment part 48
+                                                   set_TM1629_Up
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           upNumState              001F 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0020 - 0020 (0x1 bytes), align: 0
+  Segment part 15.            Intra module refs:   set_TM1629_Down
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           timeMarkState           0020 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0021 - 0021 (0x1 bytes), align: 0
+  Segment part 16.            Intra module refs:   set_TM1629_Down
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           tempMarkState           0021 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0022 - 0022 (0x1 bytes), align: 0
+  Segment part 17.            Intra module refs:   Segment part 49
+                                                   set_TM1629_Up
+                                                   set_TM1629_Waterg
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           waterState              0022 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0023 - 0023 (0x1 bytes), align: 0
+  Segment part 18.            Intra module refs:   Segment part 49
+                                                   set_TM1629_Up
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           fellState               0023 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0024 - 0024 (0x1 bytes), align: 0
+  Segment part 19.            Intra module refs:   set_TM1629_Up
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           tempState               0024 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0025 - 0025 (0x1 bytes), align: 0
+  Segment part 20.            Intra module refs:   Segment part 48
+                                                   set_TM1629_Up
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           potState                0025 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0026 - 0026 (0x1 bytes), align: 0
+  Segment part 21.            Intra module refs:   Segment part 48
+                                                   set_TM1629_Up
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           hotState                0026 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0027 - 0027 (0x1 bytes), align: 0
+  Segment part 22.            Intra module refs:   Segment part 48
+                                                   set_TM1629_Up
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           proState                0027 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0028 - 0028 (0x1 bytes), align: 0
+  Segment part 23.            Intra module refs:   set_TM1629_Down
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           colonState              0028 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0029 - 0029 (0x1 bytes), align: 0
+  Segment part 24.            Intra module refs:   Segment part 48
+                                                   set_TM1629_Up
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           phoneState              0029 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 002A - 002A (0x1 bytes), align: 0
+  Segment part 25.            Intra module refs:   Segment part 48
+                                                   set_TM1629_Up
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           vlotateState            002A 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 002B - 002B (0x1 bytes), align: 0
+  Segment part 26.            Intra module refs:   Segment part 48
+                                                   set_TM1629_Up
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           kwState                 002B 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 002C - 002C (0x1 bytes), align: 0
+  Segment part 27.            Intra module refs:   Segment part 48
+                                                   set_TM1629_Up
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           buzzState               002C 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 002D - 002E (0x2 bytes), align: 0
+  Segment part 28.            Intra module refs:   init_TM1629
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           lastState               002D 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 002F - 0030 (0x2 bytes), align: 0
+  Segment part 29.            Intra module refs:   init_TM1629
+                                                   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           listIndex               002F 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 02A0 - 0584 (0x2e5 bytes), align: 0
+  Segment part 30.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           whileUpdate_TM1629      02A0            ViewSet (main)
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0585 - 058D (0x9 bytes), align: 0
+  Segment part 31.            Intra module refs:   set_TM1629_Up
+                                                   set_TM1629_Waterg
+                                                   whileUpdate_TM1629
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 058E - 0592 (0x5 bytes), align: 0
+  Segment part 32.            Intra module refs:   init_TM1629
+                                                   whileUpdate_TM1629
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0593 - 0598 (0x6 bytes), align: 0
+  Segment part 33.            Intra module refs:   Segment part 32
+                                                   Segment part 36
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0599 - 05A1 (0x9 bytes), align: 0
+  Segment part 34.            Intra module refs:   init_TM1629
+                                                   whileUpdate_TM1629
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 05A2 - 05A9 (0x8 bytes), align: 0
+  Segment part 35.            Intra module refs:   init_TM1629
+                                                   whileUpdate_TM1629
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 05AA - 05B6 (0xd bytes), align: 0
+  Segment part 36.            Intra module refs:   init_TM1629
+                                                   whileUpdate_TM1629
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 05B7 - 05BE (0x8 bytes), align: 0
+  Segment part 37.            Intra module refs:   set_TM1629_Leftstring
+                                                   whileUpdate_TM1629
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 05BF - 05CC (0xe bytes), align: 0
+  Segment part 38.            Intra module refs:   set_TM1629_Down
+                                                   set_TM1629_Leftstring
+                                                   set_TM1629_Waterg
+                                                   whileUpdate_TM1629
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 05CD - 05D2 (0x6 bytes), align: 0
+  Segment part 39.            Intra module refs:   whileUpdate_TM1629
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 05D3 - 05FE (0x2c bytes), align: 0
+  Segment part 40.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           interuptUpdate_TM1629   05D3            int_9488 (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 05FF - 068B (0x8d bytes), align: 0
+  Segment part 41.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           init_TM1629             05FF            main (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 068C - 0733 (0xa8 bytes), align: 0
+  Segment part 42.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           set_TM1629_Leftstring   068C            ViewSet (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0734 - 073D (0xa bytes), align: 0
+  Segment part 43.            Intra module refs:   set_TM1629_Leftstring
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 073E - 07B3 (0x76 bytes), align: 0
+  Segment part 44.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           set_TM1629_LeftNum      073E            ViewSet (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 07B4 - 093D (0x18a bytes), align: 0
+  Segment part 45.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           set_TM1629_Up           07B4            ViewSet (main)
+               CSTACK = 00000000 ( 00000006 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 093E - 094E (0x11 bytes), align: 0
+  Segment part 46.            Intra module refs:   set_TM1629_Down
+                                                   set_TM1629_Up
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 094F - 0959 (0xb bytes), align: 0
+  Segment part 47.            Intra module refs:   set_TM1629_Down
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 095A - 096F (0x16 bytes), align: 0
+  Segment part 48.            Intra module refs:   set_TM1629_Up
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0970 - 0977 (0x8 bytes), align: 0
+  Segment part 49.            Intra module refs:   set_TM1629_Up
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0978 - 097C (0x5 bytes), align: 0
+  Segment part 50.            Intra module refs:   set_TM1629_Up
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 097D - 0988 (0xc bytes), align: 0
+  Segment part 51.            Intra module refs:   set_TM1629_Down
+                                                   set_TM1629_Up
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0989 - 0B91 (0x209 bytes), align: 0
+  Segment part 52.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           set_TM1629_Down         0989            ViewSet (main)
+               CSTACK = 00000000 ( 0000000B )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0B92 - 0C1A (0x89 bytes), align: 0
+  Segment part 53.            Intra module refs:   whileUpdate_TM1629
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           set_TM1629_Waterg       0B92 
+               CSTACK = 00000004 ( 00000002 )
+    -------------------------------------------------------------------------
+TINY_ID
+  Relative segment, address: CODE 1DE6 - 1DF5 (0x10 bytes), align: 0
+  Segment part 8.             Intra module refs:   buffCode_TM1629
+
+    *************************************************************************
+
+  FILE NAME : F:\GitHub\SAM8-Code\Debug\Obj\adc.r18
+  PROGRAM MODULE, NAME : adc
+
+  SEGMENTS IN THE MODULE
+  ======================
+BANK0_A
+  Relative segment, address: DATA 00D8 - 00D8 (0x1 bytes), align: 0
+  Segment part 1. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           VLDCON                  00D8 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00FA - 00FA (0x1 bytes), align: 0
+  Segment part 2. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADDATAH                 00FA 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00FB - 00FB (0x1 bytes), align: 0
+  Segment part 3. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADDATAL                 00FB 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00FC - 00FC (0x1 bytes), align: 0
+  Segment part 4. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCON                   00FC 
+    -------------------------------------------------------------------------
+CONST_C
+  Relative segment, address: CODE 1E1C - 1F0D (0xf2 bytes), align: 0
+  Segment part 8.             Intra module refs:   getTemperatureByAnum
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           rtTable1                1E1C 
+    -------------------------------------------------------------------------
+CONST_C
+  Relative segment, address: CODE 1F0E - 1F63 (0x56 bytes), align: 0
+  Segment part 9.             Intra module refs:   getTemperatureByAnum
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           rtTable2                1F0E 
+    -------------------------------------------------------------------------
+CONST_C
+  Relative segment, address: CODE 1F64 - 1FF7 (0x94 bytes), align: 0
+  Segment part 10.            Intra module refs:   getTemperatureByAnum
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           rtTable3                1F64 
+    -------------------------------------------------------------------------
+CONST_C
+  Relative segment, address: CODE 1FF8 - 2031 (0x3a bytes), align: 0
+  Segment part 11.            Intra module refs:   getTemperatureByAnum
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           rtTable4                1FF8 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0C1B - 0D16 (0xfc bytes), align: 0
+  Segment part 12.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           get_03ADC               0C1B            main (main)
+               calls direct
+               CSTACK = 00000000 ( 00000002 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0D17 - 0D2D (0x17 bytes), align: 0
+  Segment part 13.            Intra module refs:   getSwitchByAnum
+                                                   getTemperatureByAnum
+                                                   get_03ADC
+                                                   get_04ADC
+                                                   get_06ADC
+                                                   get_07ADC
+                                                   get_11ADC
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0D2E - 0D45 (0x18 bytes), align: 0
+  Segment part 14.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           get_05ADC               0D2E            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0D46 - 0D74 (0x2f bytes), align: 0
+  Segment part 15.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           get_04ADC               0D46            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0D75 - 0D7B (0x7 bytes), align: 0
+  Segment part 16.            Intra module refs:   get_04ADC
+                                                   get_06ADC
+                                                   get_07ADC
+                                                   get_11ADC
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0D7C - 0D80 (0x5 bytes), align: 0
+  Segment part 17.            Intra module refs:   get_04ADC
+                                                   get_11ADC
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0D81 - 0DAF (0x2f bytes), align: 0
+  Segment part 18.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           get_11ADC               0D81            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0DB0 - 0DD1 (0x22 bytes), align: 0
+  Segment part 19.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           get_07ADC               0DB0            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0DD2 - 0DD6 (0x5 bytes), align: 0
+  Segment part 20.            Intra module refs:   get_04ADC
+                                                   get_06ADC
+                                                   get_07ADC
+                                                   get_11ADC
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0DD7 - 0DF8 (0x22 bytes), align: 0
+  Segment part 21.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           get_06ADC               0DD7            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0DF9 - 0E10 (0x18 bytes), align: 0
+  Segment part 22.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           get_13ADC               0DF9            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0E11 - 0F29 (0x119 bytes), align: 0
+  Segment part 23.            Intra module refs:   getSwitchByAnum
+                                                   getTemperatureByAnum
+                                                   get_03ADC
+                                                   get_04ADC
+                                                   get_05ADC
+                                                   get_06ADC
+                                                   get_07ADC
+                                                   get_11ADC
+                                                   get_13ADC
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           getADCNumByNum          0E11            ViewSet (main)
+                                                   fixPWM (PWM)
+                                                   getPWMRate (PWM)
+                                                   main (main)
+               CSTACK = 00000002 ( 0000000D )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0F2A - 0FDE (0xb5 bytes), align: 0
+  Segment part 24.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           getTemperatureByAnum    0F2A            main (main)
+               calls direct
+               CSTACK = 00000000 ( 00000002 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0FDF - 10C7 (0xe9 bytes), align: 0
+  Segment part 25.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           getSwitchByAnum         0FDF            main (main)
+               calls direct
+
+    *************************************************************************
+
+  FILE NAME : F:\GitHub\SAM8-Code\Debug\Obj\main.r18
+  PROGRAM MODULE, NAME : main
+
+  SEGMENTS IN THE MODULE
+  ======================
+BANK0_A
+  Relative segment, address: DATA 00D2 - 00D2 (0x1 bytes), align: 0
+  Segment part 1. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P0PUR                   00D2 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00D3 - 00D3 (0x1 bytes), align: 0
+  Segment part 2. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P1PUR                   00D3 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00D4 - 00D4 (0x1 bytes), align: 0
+  Segment part 3. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CLKCON                  00D4 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00D6 - 00D6 (0x1 bytes), align: 0
+  Segment part 4. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           OSCCON                  00D6 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00DC - 00DC (0x1 bytes), align: 0
+  Segment part 6. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           BTCON                   00DC 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00DE - 00DE (0x1 bytes), align: 0
+  Segment part 7. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SYM                     00DE 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00E0 - 00E0 (0x1 bytes), align: 0
+  Segment part 8. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P0                      00E0 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00E3 - 00E3 (0x1 bytes), align: 0
+  Segment part 11. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P3                      00E3 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00E5 - 00E5 (0x1 bytes), align: 0
+  Segment part 12. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           WDTCON                  00E5 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00E6 - 00E6 (0x1 bytes), align: 0
+  Segment part 13. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P0CONH                  00E6 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00E7 - 00E7 (0x1 bytes), align: 0
+  Segment part 14. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P0CONL                  00E7 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00E8 - 00E8 (0x1 bytes), align: 0
+  Segment part 15. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P1CONH                  00E8 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00EA - 00EA (0x1 bytes), align: 0
+  Segment part 17. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2CONH                  00EA 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00EC - 00EC (0x1 bytes), align: 0
+  Segment part 19. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P3CONH                  00EC 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00ED - 00ED (0x1 bytes), align: 0
+  Segment part 20. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P3CONL                  00ED 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00EE - 00EE (0x1 bytes), align: 0
+  Segment part 21. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P3INT                   00EE 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00EF - 00EF (0x1 bytes), align: 0
+  Segment part 22. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P3PND                   00EF 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00F2 - 00F2 (0x1 bytes), align: 0
+  Segment part 23. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TINTPND                 00F2 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00F3 - 00F3 (0x1 bytes), align: 0
+  Segment part 24. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TACON                   00F3 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00F5 - 00F5 (0x1 bytes), align: 0
+  Segment part 25. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TADATA                  00F5 
+    -------------------------------------------------------------------------
+BANK0_A
+  Relative segment, address: DATA 00F8 - 00F8 (0x1 bytes), align: 0
+  Segment part 26. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TBCON                   00F8 
+    -------------------------------------------------------------------------
+CONST_A
+  Relative segment, address: CODE 003C - 003F (0x4 bytes), align: 0
+  Segment part 28. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Smart_Code              003C 
+    -------------------------------------------------------------------------
+CONST_C
+  Relative segment, address: CODE 2032 - 203A (0x9 bytes), align: 0
+  Segment part 33.            Intra module refs:   ViewSet
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           POWER_RATE              2032 
+    -------------------------------------------------------------------------
+TINY_I
+  Relative segment, address: IDATA 0011 - 0012 (0x2 bytes), align: 0
+  Segment part 35.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           firstOpen               0011 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0031 - 0032 (0x2 bytes), align: 0
+  Segment part 36.            Intra module refs:   Segment part 90
+                                                   Segment part 93
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           haveViewSet             0031 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0033 - 0033 (0x1 bytes), align: 0
+  Segment part 37.            Intra module refs:   int_9488
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           count_60ms              0033 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0034 - 0034 (0x1 bytes), align: 0
+  Segment part 38.            Intra module refs:   int_9488
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           count_1s                0034 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0035 - 0035 (0x1 bytes), align: 0
+  Segment part 39.            Intra module refs:   int_9488
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           count_2s                0035 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0036 - 0036 (0x1 bytes), align: 0
+  Segment part 40.            Intra module refs:   int_9488
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           BUZZ_ALL_TIME           0036 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0037 - 0037 (0x1 bytes), align: 0
+  Segment part 41.            Intra module refs:   int_9488
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           buzzTime                0037 
+    -------------------------------------------------------------------------
+TINY_I
+  Relative segment, address: IDATA 0013 - 0013 (0x1 bytes), align: 0
+  Segment part 43.            Intra module refs:   int_9488
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           fanTime                 0013 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0038 - 0039 (0x2 bytes), align: 0
+  Segment part 44.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           rangeNext               0038 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 003A - 003B (0x2 bytes), align: 0
+  Segment part 45.            Intra module refs:   ViewSet
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           rangeNow                003A 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 003C - 003D (0x2 bytes), align: 0
+  Segment part 46.            Intra module refs:   Segment part 82
+                                                   Segment part 83
+                                                   Segment part 84
+                                                   Segment part 85
+                                                   Segment part 89
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           statusViewNum           003C 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 003E - 003F (0x2 bytes), align: 0
+  Segment part 47.            Intra module refs:   Segment part 92
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           nullPot                 003E 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0040 - 0041 (0x2 bytes), align: 0
+  Segment part 48.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           coilHot                 0040 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0042 - 0043 (0x2 bytes), align: 0
+  Segment part 49.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           coilCut                 0042 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0044 - 0045 (0x2 bytes), align: 0
+  Segment part 50.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           igbtHot_1               0044 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0046 - 0047 (0x2 bytes), align: 0
+  Segment part 51.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           igbtCut_1               0046 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0048 - 0049 (0x2 bytes), align: 0
+  Segment part 52.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           igbtHot_2               0048 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 004A - 004B (0x2 bytes), align: 0
+  Segment part 53.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           igbtCut_2               004A 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 004C - 004D (0x2 bytes), align: 0
+  Segment part 54.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           vLow                    004C 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 004E - 004F (0x2 bytes), align: 0
+  Segment part 55.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           vHight                  004E 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0050 - 0051 (0x2 bytes), align: 0
+  Segment part 56.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           vCut                    0050 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0052 - 0053 (0x2 bytes), align: 0
+  Segment part 57.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           switchCut               0052 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0054 - 0055 (0x2 bytes), align: 0
+  Segment part 58.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           underPotCut             0054 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0056 - 0057 (0x2 bytes), align: 0
+  Segment part 59.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           underPotHot             0056 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0058 - 0059 (0x2 bytes), align: 0
+  Segment part 60.            Intra module refs:   Segment part 92
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cTransformer            0058 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 005A - 005B (0x2 bytes), align: 0
+  Segment part 61.            Intra module refs:   Segment part 92
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cTransformerCut         005A 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 005C - 005D (0x2 bytes), align: 0
+  Segment part 62.            Intra module refs:   Segment part 82
+                                                   Segment part 87
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           temp                    005C 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 005E - 005F (0x2 bytes), align: 0
+  Segment part 63.            Intra module refs:   Segment part 81
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           checkTimeOn             005E 
+    -------------------------------------------------------------------------
+TINY_I
+  Relative segment, address: IDATA 0014 - 0014 (0x1 bytes), align: 0
+  Segment part 65.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           nullPotCheckTime        0014 
+    -------------------------------------------------------------------------
+TINY_I
+  Relative segment, address: IDATA 0015 - 0015 (0x1 bytes), align: 0
+  Segment part 67.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           igbtErrorCheckTime      0015 
+    -------------------------------------------------------------------------
+TINY_I
+  Relative segment, address: IDATA 0016 - 0016 (0x1 bytes), align: 0
+  Segment part 69.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cTransformerChenckTime
+                                   0016 
+    -------------------------------------------------------------------------
+TINY_I
+  Relative segment, address: IDATA 0017 - 0017 (0x1 bytes), align: 0
+  Segment part 71.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cTransformerCutCheckTime
+                                   0017 
+    -------------------------------------------------------------------------
+TINY_I
+  Relative segment, address: IDATA 0018 - 0018 (0x1 bytes), align: 0
+  Segment part 73.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           temperatureCheckTime    0018 
+    -------------------------------------------------------------------------
+TINY_I
+  Relative segment, address: IDATA 0019 - 001A (0x2 bytes), align: 0
+  Segment part 75.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           whileUpdata             0019 
+    -------------------------------------------------------------------------
+TINY_Z
+  Relative segment, address: IDATA 0060 - 0061 (0x2 bytes), align: 0
+  Segment part 76.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           tempreture              0060 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 10C8 - 1B37 (0xa70 bytes), align: 0
+  Segment part 78.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    10C8            __MAIN_CALL (?__MAIN_CALL)
+               calls direct
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1B38 - 1B39 (0x2 bytes), align: 0
+  Segment part 79.            Intra module refs:   main
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1B3A - 1B40 (0x7 bytes), align: 0
+  Segment part 80.            Intra module refs:   Segment part 79
+                                                   Segment part 96
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1B41 - 1B47 (0x7 bytes), align: 0
+  Segment part 81.            Intra module refs:   main
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1B48 - 1B52 (0xb bytes), align: 0
+  Segment part 82.            Intra module refs:   main
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1B53 - 1B58 (0x6 bytes), align: 0
+  Segment part 83.            Intra module refs:   main
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1B59 - 1B5E (0x6 bytes), align: 0
+  Segment part 84.            Intra module refs:   main
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1B5F - 1B66 (0x8 bytes), align: 0
+  Segment part 85.            Intra module refs:   main
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1B67 - 1B6D (0x7 bytes), align: 0
+  Segment part 86.            Intra module refs:   main
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1B6E - 1B75 (0x8 bytes), align: 0
+  Segment part 87.            Intra module refs:   main
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1B76 - 1B86 (0x11 bytes), align: 0
+  Segment part 88.            Intra module refs:   main
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1B87 - 1B8E (0x8 bytes), align: 0
+  Segment part 89.            Intra module refs:   main
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1B8F - 1B95 (0x7 bytes), align: 0
+  Segment part 90.            Intra module refs:   main
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1B96 - 1B9A (0x5 bytes), align: 0
+  Segment part 91.            Intra module refs:   main
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1B9B - 1BA7 (0xd bytes), align: 0
+  Segment part 92.            Intra module refs:   main
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1BA8 - 1BAD (0x6 bytes), align: 0
+  Segment part 93.            Intra module refs:   main
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1BAE - 1BF9 (0x4c bytes), align: 0
+  Segment part 94.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ViewSet                 1BAE 
+               calls direct
+               CSTACK = 00000000 ( 00000002 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1BFA - 1C93 (0x9a bytes), align: 0
+  Segment part 95.            Intra module refs:   Segment part 29
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           int_9488                1BFA 
+               interrupt function
+               calls direct
+               CSTACK = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 1C94 - 1C96 (0x3 bytes), align: 0
+  Segment part 96.            Intra module refs:   int_9488
+    -------------------------------------------------------------------------
+INTVEC
+  Relative segment, address: CODE 0000 - 0001 (0x2 bytes), align: 0
+  Segment part 29. ROOT.
+    -------------------------------------------------------------------------
+TINY_ID
+  Relative segment, address: CODE 1DF6 - 1DF7 (0x2 bytes), align: 0
+  Segment part 34.            Intra module refs:   firstOpen
+    -------------------------------------------------------------------------
+TINY_ID
+  Relative segment, address: CODE 1DF8 - 1DF8 (0x1 bytes), align: 0
+  Segment part 42.            Intra module refs:   fanTime
+    -------------------------------------------------------------------------
+TINY_ID
+  Relative segment, address: CODE 1DF9 - 1DF9 (0x1 bytes), align: 0
+  Segment part 64.            Intra module refs:   nullPotCheckTime
+    -------------------------------------------------------------------------
+TINY_ID
+  Relative segment, address: CODE 1DFA - 1DFA (0x1 bytes), align: 0
+  Segment part 66.            Intra module refs:   igbtErrorCheckTime
+    -------------------------------------------------------------------------
+TINY_ID
+  Relative segment, address: CODE 1DFB - 1DFB (0x1 bytes), align: 0
+  Segment part 68.            Intra module refs:   cTransformerChenckTime
+    -------------------------------------------------------------------------
+TINY_ID
+  Relative segment, address: CODE 1DFC - 1DFC (0x1 bytes), align: 0
+  Segment part 70.            Intra module refs:   cTransformerCutCheckTime
+    -------------------------------------------------------------------------
+TINY_ID
+  Relative segment, address: CODE 1DFD - 1DFD (0x1 bytes), align: 0
+  Segment part 72.            Intra module refs:   temperatureCheckTime
+    -------------------------------------------------------------------------
+TINY_ID
+  Relative segment, address: CODE 1DFE - 1DFF (0x2 bytes), align: 0
+  Segment part 74.            Intra module refs:   whileUpdata
+
+    *************************************************************************
+
+  FILE NAME : F:\GitHub\SAM8-Code\Debug\Obj\time.r18
+  PROGRAM MODULE, NAME : time
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE 1C97 - 1CF0 (0x5a bytes), align: 0
+  Segment part 4.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           delay                   1C97            main (main)
+               CSTACK = 00000000 ( 00000005 )
+
+    *************************************************************************
+
+  FILE NAME : D:\pf\IAR\SAM8\lib\clsam8xriss.r18
+  PROGRAM MODULE, NAME : ?CSTARTUP
+
+  SEGMENTS IN THE MODULE
+  ======================
+RESET
+  Relative segment, address: CODE 0100 - 0100 (0x1 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?C_STARTUP              0100 
+           __program_start         0100            Absolute parts (?ABS_ENTRY_MOD)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?__INIT_STACK
+
+  SEGMENTS IN THE MODULE
+  ======================
+RESET
+  Relative segment, address: CODE 0101 - 0103 (0x3 bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __INIT_STACK            0101            ViewSet (main)
+                                                   delay (time)
+                                                   fixPWM (PWM)
+                                                   getADCNumByNum (adc)
+                                                   getPWMRate (PWM)
+                                                   getSwitchByAnum (adc)
+                                                   getTemperatureByAnum (adc)
+                                                   get_03ADC (adc)
+                                                   get_04ADC (adc)
+                                                   get_05ADC (adc)
+                                                   get_06ADC (adc)
+                                                   get_07ADC (adc)
+                                                   get_11ADC (adc)
+                                                   get_13ADC (adc)
+                                                   init_TM1629 (TM1629)
+                                                   int_9488 (main)
+                                                   interuptUpdate_TM1629 (TM1629)
+                                                   main (main)
+                                                   set_TM1629_Down (TM1629)
+                                                   set_TM1629_LeftNum (TM1629)
+                                                   set_TM1629_Leftstring (TM1629)
+                                                   set_TM1629_Up (TM1629)
+                                                   set_TM1629_Waterg (TM1629)
+                                                   whileUpdate_TM1629 (TM1629)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?__INIT_TINY_Z
+
+  SEGMENTS IN THE MODULE
+  ======================
+TINY_Z
+  Relative segment, address: IDATA 0062, align: 0
+  Segment part 0. ROOT.
+    -------------------------------------------------------------------------
+RESET
+  Relative segment, address: CODE 0104 - 010F (0xc bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __INIT_TINY_Z           0104            BUZZ_ALL_TIME (main)
+                                                   buzzState (TM1629)
+                                                   buzzTime (main)
+                                                   cTransformer (main)
+                                                   cTransformerCut (main)
+                                                   checkTimeOn (main)
+                                                   coilCut (main)
+                                                   coilHot (main)
+                                                   colonState (TM1629)
+                                                   count_1s (main)
+                                                   count_2s (main)
+                                                   count_60ms (main)
+                                                   fellState (TM1629)
+                                                   haveViewSet (main)
+                                                   hotState (TM1629)
+                                                   igbtCut_1 (main)
+                                                   igbtCut_2 (main)
+                                                   igbtHot_1 (main)
+                                                   igbtHot_2 (main)
+                                                   kwState (TM1629)
+                                                   lastState (TM1629)
+                                                   listIndex (TM1629)
+                                                   nullPot (main)
+                                                   phoneState (TM1629)
+                                                   potState (TM1629)
+                                                   proState (TM1629)
+                                                   rangeNext (main)
+                                                   rangeNow (main)
+                                                   startTimeHour (TM1629)
+                                                   startTimeMin (TM1629)
+                                                   startTimeSecond (TM1629)
+                                                   stateTime (TM1629)
+                                                   statusViewNum (main)
+                                                   switchCut (main)
+                                                   temp (main)
+                                                   tempMarkState (TM1629)
+                                                   tempState (TM1629)
+                                                   tempreture (main)
+                                                   timeMarkState (TM1629)
+                                                   underPotCut (main)
+                                                   underPotHot (main)
+                                                   upNumState (TM1629)
+                                                   vCut (main)
+                                                   vHight (main)
+                                                   vLow (main)
+                                                   vlotateState (TM1629)
+                                                   waterState (TM1629)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?__INIT_TINY_I
+
+  SEGMENTS IN THE MODULE
+  ======================
+TINY_I
+  Relative segment, address: IDATA 001B, align: 0
+  Segment part 0. ROOT.
+    -------------------------------------------------------------------------
+TINY_ID
+  Relative segment, address: CODE 1E00, align: 0
+  Segment part 1. ROOT.
+    -------------------------------------------------------------------------
+RESET
+  Relative segment, address: CODE 0110 - 0120 (0x11 bytes), align: 0
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __INIT_TINY_I           0110            buffCode_TM1629 (TM1629)
+                                                   cTransformerChenckTime (main)
+                                                   cTransformerCutCheckTime (main)
+                                                   fanTime (main)
+                                                   firstOpen (main)
+                                                   igbtErrorCheckTime (main)
+                                                   nullPotCheckTime (main)
+                                                   pwm (PWM)
+                                                   temperatureCheckTime (main)
+                                                   whileUpdata (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?__MAIN_CALL
+
+  SEGMENTS IN THE MODULE
+  ======================
+RESET
+  Relative segment, address: CODE 0121 - 0126 (0x6 bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __MAIN_CALL             0121            Absolute parts (?__CALL_LOW)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE 1CF2 - 1CF4 (0x3 bytes), align: 1
+  Segment part 0. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?C_EXIT                 1CF2            __MAIN_CALL (?__MAIN_CALL)
+           exit                    1CF2 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?lowinit
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE 1CF6 - 1CFA (0x5 bytes), align: 1
+  Segment part 0. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __low_level_init        1CF6 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?CLSAM8_2_30_L00
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?CLSAM8_2_30_L00        0000            Segment part 12 (PWM)
+                                                   Segment part 13 (adc)
+                                                   Segment part 16 (adc)
+                                                   Segment part 17 (adc)
+                                                   Segment part 20 (adc)
+                                                   Segment part 31 (TM1629)
+                                                   Segment part 32 (TM1629)
+                                                   Segment part 33 (TM1629)
+                                                   Segment part 34 (TM1629)
+                                                   Segment part 35 (TM1629)
+                                                   Segment part 36 (TM1629)
+                                                   Segment part 37 (TM1629)
+                                                   Segment part 38 (TM1629)
+                                                   Segment part 39 (TM1629)
+                                                   Segment part 43 (TM1629)
+                                                   Segment part 46 (TM1629)
+                                                   Segment part 47 (TM1629)
+                                                   Segment part 48 (TM1629)
+                                                   Segment part 49 (TM1629)
+                                                   Segment part 50 (TM1629)
+                                                   Segment part 51 (TM1629)
+                                                   Segment part 79 (main)
+                                                   Segment part 80 (main)
+                                                   Segment part 81 (main)
+                                                   Segment part 82 (main)
+                                                   Segment part 83 (main)
+                                                   Segment part 84 (main)
+                                                   Segment part 85 (main)
+                                                   Segment part 86 (main)
+                                                   Segment part 87 (main)
+                                                   Segment part 88 (main)
+                                                   Segment part 89 (main)
+                                                   Segment part 90 (main)
+                                                   Segment part 91 (main)
+                                                   Segment part 92 (main)
+                                                   Segment part 93 (main)
+                                                   Segment part 96 (main)
+                                                   ViewSet (main)
+                                                   delay (time)
+                                                   fixPWM (PWM)
+                                                   getADCNumByNum (adc)
+                                                   getPWMRate (PWM)
+                                                   getSwitchByAnum (adc)
+                                                   getTemperatureByAnum (adc)
+                                                   get_03ADC (adc)
+                                                   get_04ADC (adc)
+                                                   get_05ADC (adc)
+                                                   get_06ADC (adc)
+                                                   get_07ADC (adc)
+                                                   get_11ADC (adc)
+                                                   get_13ADC (adc)
+                                                   init_TM1629 (TM1629)
+                                                   int_9488 (main)
+                                                   interuptUpdate_TM1629 (TM1629)
+                                                   main (main)
+                                                   set_TM1629_Down (TM1629)
+                                                   set_TM1629_LeftNum (TM1629)
+                                                   set_TM1629_Leftstring (TM1629)
+                                                   set_TM1629_Up (TM1629)
+                                                   set_TM1629_Waterg (TM1629)
+                                                   whileUpdate_TM1629 (TM1629)
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?C_SHL_L01
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE 1CFC - 1D07 (0xc bytes), align: 1
+  Segment part 0. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?C_SHL_L01              1CFC            whileUpdate_TM1629 (TM1629)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?S_MUL_L02
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE 1D08 - 1D34 (0x2d bytes), align: 1
+  Segment part 0. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?C_MUL_L01              1D08 
+           ?S_MUL_L02              1D0C            delay (time)
+                                                   set_TM1629_Down (TM1629)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?US_DIVMOD_L02
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE 1D36 - 1D75 (0x40 bytes), align: 1
+  Segment part 0. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?UC_DIVMOD_L01          1D36            set_TM1629_Up (TM1629)
+                                                   set_TM1629_Waterg (TM1629)
+                                                   whileUpdate_TM1629 (TM1629)
+           ?US_DIVMOD_L02          1D3A            Segment part 0 (?SS_DIVMOD_L02)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?SS_DIVMOD_L02
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE 1D76 - 1DC8 (0x53 bytes), align: 1
+  Segment part 0. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?SC_DIVMOD_L01          1D76 
+           ?SS_DIVMOD_L02          1D82            set_TM1629_Down (TM1629)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?S_SHL_L02
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE 1DCA - 1DD7 (0xe bytes), align: 1
+  Segment part 0. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?S_SHL_L02              1DCA            getADCNumByNum (adc)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?SS_SHR_L02
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE 1DD8 - 1DE4 (0xd bytes), align: 1
+  Segment part 0. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?SS_SHR_L02             1DD8 
+
+
+
+
+                ****************************************
+                *                                      *
+                *              CALL GRAPH              *
+                *                                      *
+                ****************************************
+
+  ->Sub-tree of type: Interrupt function tree that does not make
+                    : indirect calls
+                             CSTACK
+    | Stack used (prev) :  00000000
+  02    interuptUpdate_TM1629
+        | Stack used (prev) :  00000000
+        | + function block  :  00000000
+  01  int_9488
+      | Stack used (prev) :  00000000
+      | + function block  :  00000010
+  <-Sub-tree of type: Interrupt function tree that does not make
+                    : indirect calls
+    | Stack used          :  00000010
+
+
+  ->Sub-tree of type: Function tree
+                             CSTACK
+    | Stack used (prev) :  00000010
+  02    delay
+        | Stack used (prev) :  00000010
+        | + function block  :  00000005
+  03      getADCNumByNum
+          | Stack used (prev) :  00000010
+          | + function block  :  0000000F
+  03      set_TM1629_Down
+          | Stack used (prev) :  00000010
+          | + function block  :  0000000B
+  03      set_TM1629_Up
+          | Stack used (prev) :  00000010
+          | + function block  :  00000006
+  03      set_TM1629_LeftNum
+          | Stack used (prev) :  00000010
+          | + function block  :  00000000
+  03      set_TM1629_Leftstring
+          | Stack used (prev) :  00000010
+          | + function block  :  00000000
+  04        set_TM1629_Waterg
+            | Stack used (prev) :  00000010
+            | + function block  :  00000006
+  03      whileUpdate_TM1629
+          | Stack used (prev) :  00000016
+          | + function block  :  00000008
+  04        getADCNumByNum
+            | Stack used (prev) :  00000010
+            | + function block  :  0000000F
+            |  Already listed
+  03      getPWMRate
+          | Stack used (prev) :  0000001F
+          | + function block  :  00000000
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  02    ViewSet
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+        |  Already listed
+  03      getADCNumByNum
+          | Stack used (prev) :  00000010
+          | + function block  :  0000000F
+          |  Already listed
+  02    getSwitchByAnum
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000000
+  03      getADCNumByNum
+          | Stack used (prev) :  00000010
+          | + function block  :  0000000F
+          |  Already listed
+  02    getTemperatureByAnum
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+  02    getADCNumByNum
+        | Stack used (prev) :  00000010
+        | + function block  :  0000000F
+        |  Already listed
+  03      getADCNumByNum
+          | Stack used (prev) :  00000010
+          | + function block  :  0000000F
+          |  Already listed
+  02    get_13ADC
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000000
+  03      getADCNumByNum
+          | Stack used (prev) :  00000010
+          | + function block  :  0000000F
+          |  Already listed
+  02    get_06ADC
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000000
+  03      getADCNumByNum
+          | Stack used (prev) :  00000010
+          | + function block  :  0000000F
+          |  Already listed
+  02    get_07ADC
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000000
+  03      getADCNumByNum
+          | Stack used (prev) :  00000010
+          | + function block  :  0000000F
+          |  Already listed
+  02    get_11ADC
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000000
+  03      getADCNumByNum
+          | Stack used (prev) :  00000010
+          | + function block  :  0000000F
+          |  Already listed
+  02    get_04ADC
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000000
+  03      getADCNumByNum
+          | Stack used (prev) :  00000010
+          | + function block  :  0000000F
+          |  Already listed
+  02    get_05ADC
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000000
+  03      getADCNumByNum
+          | Stack used (prev) :  00000010
+          | + function block  :  0000000F
+          |  Already listed
+  02    get_03ADC
+        | Stack used (prev) :  0000001F
+        | + function block  :  00000004
+  02    init_TM1629
+        | Stack used (prev) :  00000010
+        | + function block  :  00000000
+  03      getADCNumByNum
+          | Stack used (prev) :  00000010
+          | + function block  :  0000000F
+          |  Already listed
+  02    fixPWM
+        | Stack used (prev) :  0000001F
+        | + function block  :  0000000C
+  01  main
+      | Stack used (prev) :  0000002B
+      | + function block  :  00000000
+  <-Sub-tree of type: Function tree
+    | Stack used          :  0000002B
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+INTVEC               CODE              0000 - 0001               2   rel    0
+CONST_A              CODE              003C - 003F               4   rel    0
+RESET                CODE              0100 - 0126              27   rel    1
+CODE                 CODE              0128 - 1DE4            1CBD   rel    1
+TINY_ID              CODE              1DE5 - 1DFF              1B   rel    0
+TINYP_ID_END         CODE                 1E00                       dse    0
+TINYP_ID             CODE                 1E00                       dse    0
+TINY2P_Z_ID          CODE                 1E00                       dse    0
+TINYP_Z_ID_END       CODE                 1E00                       dse    0
+NEAR_ID              CODE                 1E00                       dse    0
+TINYP_Z_ID           CODE                 1E00                       dse    0
+TINY2P_ID            CODE                 1E00                       dse    0
+TINY2_ID             CODE                 1E00                       dse    0
+CONST_C              CODE              1E00 - 203A             23B   rel    0
+BANK0_A              DATA              00D2 - 00D4               3   rel    0
+                     DATA              00D6 - 00D6               1 
+                     DATA              00D8 - 00D8               1 
+                     DATA              00DC - 00DC               1 
+                     DATA              00DE - 00DE               1 
+                     DATA              00E0 - 00E3               4 
+                     DATA              00E5 - 00EF               B 
+                     DATA              00F2 - 00F3               2 
+                     DATA              00F5 - 00F8               4 
+                     DATA              00FA - 00FC               3 
+TINY_I               IDATA             0000 - 001A              1B   rel    0
+TINY_N               IDATA                001B                       dse    0
+TINY_Z               IDATA             001B - 0061              47   rel    0
+CSTACK               IDATA             0062 - 00B1              50   dse    0
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 7 994 bytes of CODE  memory (+  6 absolute )
+     0 bytes of DATA  memory (+ 31 absolute )
+   178 bytes of IDATA memory
+
+Errors: none
+Warnings: none
+
